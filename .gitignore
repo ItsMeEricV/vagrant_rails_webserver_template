@@ -1,0 +1,17 @@
+#Ignore bundler config.
+code/.bundle
+
+# Ignore the default SQLite database.
+code/db/*.sqlite3
+code/db/*.sqlite3-journal
+
+# Ignore all logfiles and tempfiles.
+code/log/*.log
+code/tmp
+.DS_Store
+*.sublime*
+code/config/database.yml
+code/config/passwords.yml.erb
+*.pem
+.env
+/bin
