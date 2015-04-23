@@ -1,7 +1,7 @@
 # set up nginx
 template "/etc/nginx/sites-available/webserver" do
   source node['node']['webserver_template']
-  cookbook "rails-config"
+  cookbook "rails-config-mysql"
   mode "0644"
 end
 

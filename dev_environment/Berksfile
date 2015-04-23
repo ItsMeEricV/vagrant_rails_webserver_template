@@ -1,7 +1,8 @@
 source "https://supermarket.getchef.com"
 
+metadata
 cookbook 'apt'
 cookbook 'build-essential'
 cookbook 'rbenv'
-cookbook 'rails-config', path: '.'
 cookbook 'nginx'
+cookbook 'database', '~> 4.0.5'

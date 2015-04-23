@@ -80,15 +80,15 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.environment = "development"
     chef.environments_path = "environments"
     chef.roles_path = "roles"
-    #chef.data_bags_path = "data_bags"
+    chef.data_bags_path = "data_bags"
     chef.add_role "webserver_development"
 
     chef.json = {
-      #mysql: {
-      #  server_root_password: 'rootpass',
+      # mysql: {
+      #  server_root_password: 'gesualdo',
       #  server_debian_password: 'debpass',
       #  server_repl_password: 'replpass'
-      #}
+      # }
     }
 
     #chef.run_list = [

@@ -5,5 +5,6 @@ run_list  "recipe[apt]",
           "recipe[nginx]",
           "recipe[rbenv::default]",
           "recipe[rbenv::ruby_build]",
-          "recipe[rails-config]",
-          "recipe[rails-config::webserver_config]"
+          "recipe[rails-config-mysql]",
+          "recipe[rails-config-mysql::webserver_config]",
+          "recipe[rails-config-mysql::db_config]"
