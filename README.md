@@ -1,7 +1,7 @@
-Vagrant Rails Webserver Template
+Vagrant Rails Webserver Template - MySQL edition
 ================================
 
-A dead simple generic template for quickly getting a Vagrant-managed virtual machine up and running for Rails development. 
+A dead simple generic template for quickly getting a Vagrant-managed virtual machine up and running for Rails development. This branch installs a MySQL database.
 
 Instructions
 -----------------
@@ -19,6 +19,6 @@ Instructions
     - Website root: the `code` folder is synced to the VM as the website root
     - Chef configuration: Uses chef-solo to provision the VM
 1. Then `cd dev_environment`
-1. Run `vagrant up`. 
+1. Run `vagrant up`.
 1. Open a web browser and navigate to 192.168.60.111. You should see a "Hello, Vagrant!" message if all went well.
 1. Remove the index.html placeholder file, then run `rails new code` to create a new Rails app.
